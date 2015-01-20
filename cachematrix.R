@@ -25,7 +25,7 @@ message("getting cached data")
 return(m)
 }
 data <- x$get() ## if inverse not calculated already get the matrix
-m <- solve(data, ...) ## Calculate the inverse
+m <- solve(data, ...) ## Calculate the inverse matrix
 x$setinverse(m) ## Cache the result
 m
 }
